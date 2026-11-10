@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wassim Tawk — Full Stack & AI Automation Engineer</title>
+  <meta name="description" content="Wassim Tawk — Full Stack Developer and AI Automation Engineer based in Lebanon. Node.js, React, PostgreSQL, n8n, GoHighLevel and AI-augmented workflows.">
+  <meta name="theme-color" content="#05080d">
+  <meta property="og:title" content="Wassim Tawk — Full Stack & AI Automation Engineer">
+  <meta property="og:description" content="I build automation systems and full stack products that remove manual work.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%2305080d'/><rect x='3' y='3' width='58' height='58' rx='10' fill='none' stroke='%2300ff9c' stroke-width='3'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='monospace' font-weight='700' font-size='26' fill='%2300ff9c'>&gt;_</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="matrix" aria-hidden="true"></canvas>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="logo"><span class="prompt">wassim@tawk</span><span class="muted">:</span><span class="path">~</span><span class="muted">$</span><span class="cursor">_</span></a>
+      <nav class="links" id="links">
+        <a href="#about"><span>01.</span>about</a>
+        <a href="#experience"><span>02.</span>experience</a>
+        <a href="#projects"><span>03.</span>projects</a>
+        <a href="#skills"><span>04.</span>stack</a>
+        <a href="#education"><span>05.</span>education</a>
+        <a href="#contact" class="btn btn-sm">./contact</a>
+      </nav>
+      <button class="icon-btn menu-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="status"><span class="dot"></span> SYSTEM ONLINE <span class="muted">//</span> LEBANON <span class="muted">//</span> REMOTE-READY</p>
+        <p class="hello">&gt; hello world, I'm</p>
+        <h1 class="glitch" data-text="WASSIM TAWK">WASSIM TAWK</h1>
+        <p class="role"><span class="muted">const</span> role = <span class="str">"<span id="typed">Full Stack Developer</span><span class="caret"></span>"</span>;</p>
+        <p class="lead">I build automation systems and full stack products that take manual work off people's plates — from webhook-driven CRM pipelines to live operational dashboards for leadership.</p>
+        <div class="cta">
+          <a href="#projects" class="btn">[ view_projects ]</a>
+          <a href="mailto:wasstawk@gmail.com" class="btn btn-ghost">[ send_message ]</a>
+        </div>
+      </div>
+
+      <div class="term-window">
+        <div class="term-bar"><span></span><span></span><span></span><em>~/automation/pipeline.js</em></div>
+<pre class="term"><code><span class="ln">01</span> <span class="c">// lead management automation</span>
+<span class="ln">02</span> <span class="k">on</span>(<span class="s">'webhook'</span>, <span class="k">async</span> (lead) =&gt; {
+<span class="ln">03</span>   <span class="k">const</span> data = <span class="f">validate</span>(lead);
+<span class="ln">04</span>   <span class="k">await</span> <span class="f">retry</span>(() =&gt; ghl.<span class="f">upsert</span>(data));
+<span class="ln">05</span>   <span class="k">await</span> <span class="f">sync</span>([<span class="s">'crm'</span>, <span class="s">'db'</span>, <span class="s">'slack'</span>]);
+<span class="ln">06</span>   <span class="f">followUp</span>(data.status);
+<span class="ln">07</span> });
+<span class="ln">08</span>
+<span class="ln">09</span> <span class="c">// $ node pipeline.js</span>
+<span class="ln">10</span> <span class="ok">✔</span> pipeline deployed
+<span class="ln">11</span> <span class="ok">✔</span> manual work <span class="n">-75%</span></code></pre>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="wrap stats">
+      <div class="stat"><span class="stat-label">AUTOMATION_GAIN</span><strong data-count="80" data-prefix="70–" data-suffix="%">70–80%</strong><span>less manual admin work</span></div>
+      <div class="stat"><span class="stat-label">TEAM_SIZE</span><strong data-count="4">4</strong><span>engineers led, reporting to CTO</span></div>
+      <div class="stat"><span class="stat-label">RECORDS_MIGRATED</span><strong data-count="60" data-suffix="K">60K</strong><span>in an ETL pipeline project</span></div>
+      <div class="stat"><span class="stat-label">LANGUAGES</span><strong data-count="3">3</strong><span>English · French · Arabic</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="wrap section">
+      <div class="section-head reveal">
+        <p class="cmd"><span class="ps">$</span> cat about.md</p>
+        <h2><span class="num">01.</span> About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="reveal about-text">
+          <p>I'm a Computer &amp; Communications Engineering student at <strong>Notre Dame University – Louaize</strong> and an engineer who sits where software meets operations. I've coordinated multiple client accounts, led cross-functional teams, and built the systems that let them scale.</p>
+          <p>My toolkit spans <strong>Node.js, React and PostgreSQL</strong> on the engineering side and <strong>GoHighLevel, n8n, ClickUp and AI-augmented workflows</strong> on the operations side. I've reported directly to CEO and CTO level leadership in fast-paced remote environments.</p>
+        </div>
+        <ul class="focus reveal">
+          <li><span class="focus-tag">[01]</span><h3>automation</h3><p>Webhook pipelines, CRM sync, retries and alerts that keep running on their own.</p></li>
+          <li><span class="focus-tag">[02]</span><h3>full_stack</h3><p>Production systems with Node.js backends, React frontends and PostgreSQL.</p></li>
+          <li><span class="focus-tag">[03]</span><h3>ai_workflows</h3><p>LLM APIs woven into day-to-day operations to speed up execution.</p></li>
+          <li><span class="focus-tag">[04]</span><h3>delivery</h3><p>Standups, reviews and ClickUp planning that protect the critical path.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="wrap section">
+      <div class="section-head reveal">
+        <p class="cmd"><span class="ps">$</span> git log --author="wassim" --oneline</p>
+        <h2><span class="num">02.</span> Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job-meta"><span class="hash">a7f3c21</span><span class="date">Jan 2025 – Apr 2026</span><span class="tag">full-time · remote</span></div>
+          <div class="job-body">
+            <h3>Full Stack Developer &amp; Project Manager <span class="at">@ Make Real Company</span></h3>
+            <ul>
+              <li>Managed end-to-end delivery across multiple simultaneous workstreams, leading a cross-functional team of 4 engineers with direct reporting to the CTO.</li>
+              <li>Built and maintained a live operational dashboard giving leadership real-time visibility into project status, milestones and delivery timelines — no manual updates required.</li>
+              <li>Ran daily standups and weekly formal reviews, spotting blockers early and reallocating resources to protect deadlines.</li>
+              <li>Coordinated task assignment in ClickUp by priority and time criticality, keeping the critical path protected across concurrent projects.</li>
+              <li>Integrated LLM APIs and AI-powered tools into operational workflows, improving execution speed and output quality.</li>
+              <li>Delivered production-ready full stack systems with Node.js backends, React frontends and PostgreSQL databases.</li>
+            </ul>
+            <div class="chips"><span>node.js</span><span>react</span><span>postgresql</span><span>clickup</span><span>llm-apis</span></div>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job-meta"><span class="hash">4e9b0d8</span><span class="date">Aug 2024 – Jan 2025</span><span class="tag">internship · beirut</span></div>
+          <div class="job-body">
+            <h3>Engineering Intern <span class="at">@ AutoSouk</span></h3>
+            <ul>
+              <li>Assisted in system development, testing and troubleshooting across engineering projects.</li>
+              <li>Took part in performance optimisation and technical problem-solving workflows.</li>
+            </ul>
+            <div class="chips"><span>testing</span><span>troubleshooting</span><span>optimisation</span></div>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job-meta"><span class="hash">1c52e6f</span><span class="date">2023 – 2024</span><span class="tag">apprenticeship · remote</span></div>
+          <div class="job-body">
+            <h3>Software &amp; Automation Engineer <span class="at">@ Scalebuilds</span></h3>
+            <ul>
+              <li>Managed multiple client CRM accounts at once, building GoHighLevel automation infrastructure tailored to each account.</li>
+              <li>Designed and deployed an end-to-end lead management automation system that cut manual admin work by an estimated 70–80%.</li>
+              <li>Traced and fixed a critical data-sync failure caused by inconsistent webhook payloads — corrected mapping errors and added retry logic plus automated error notifications.</li>
+              <li>Built and maintained SQL-based databases for reliable storage and cross-system synchronisation.</li>
+              <li>Integrated REST APIs connecting internal tools with external platforms for real-time data flow.</li>
+            </ul>
+            <div class="chips"><span>gohighlevel</span><span>webhooks</span><span>sql</span><span>rest-apis</span><span>n8n</span></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="wrap section">
+      <div class="section-head reveal">
+        <p class="cmd"><span class="ps">$</span> ls ./projects</p>
+        <h2><span class="num">03.</span> Projects</h2>
+      </div>
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project-top"><span class="folder">~/scalebuilds/</span><span class="badge">PRODUCTION</span></div>
+          <h3>AI-Powered Lead Management &amp; CRM Automation</h3>
+          <p class="flow"><span>webhook</span>→<span>validate</span>→<span>ghl api</span>→<span>sync</span>→<span>follow-up</span></p>
+          <p>End-to-end pipeline that updates the CRM through the GoHighLevel API, syncs across services and triggers follow-up sequences based on lead status.</p>
+          <p class="result"><span class="ok">✔</span> ~70–80% less manual CRM work, with error handling, retry logic and structured logging.</p>
+          <div class="chips"><span>gohighlevel-api</span><span>webhooks</span><span>n8n</span><span>retry-logic</span></div>
+        </article>
+        <article class="project reveal">
+          <div class="project-top"><span class="folder">~/make-real/</span><span class="badge">PRODUCTION</span></div>
+          <h3>Operational Dashboard &amp; Reporting System</h3>
+          <p class="flow"><span>projects</span>→<span>data layer</span>→<span>live dashboard</span>→<span>CTO</span></p>
+          <p>A live reporting dashboard giving the CTO real-time visibility into project delivery, milestone status and team performance across every active workstream.</p>
+          <p class="result"><span class="ok">✔</span> Zero manual status updates — saved hours of weekly coordination.</p>
+          <div class="chips"><span>react</span><span>node.js</span><span>postgresql</span><span>kpi-dashboards</span></div>
+        </article>
+        <article class="project reveal">
+          <div class="project-top"><span class="folder">~/personal/</span><span class="badge alt">SIDE PROJECT</span></div>
+          <h3>PostgreSQL Data Migration Pipeline</h3>
+          <p class="flow"><span>legacy csv</span>→<span>validate</span>→<span>dedupe</span>→<span>postgres ×5</span></p>
+          <p>A simulated real-world ETL migration of 40,000–60,000 records into a normalised schema: Customers, Products, Orders, OrderItems and Payments.</p>
+          <p class="result"><span class="ok">✔</span> Node.js scripts with parameterised SQL and referential-integrity checks.</p>
+          <div class="chips"><span>node.js</span><span>postgresql</span><span>etl</span><span>sql</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="wrap section">
+      <div class="section-head reveal">
+        <p class="cmd"><span class="ps">$</span> cat package.json | jq .skills</p>
+        <h2><span class="num">04.</span> Tech stack</h2>
+      </div>
+      <div class="skills-json reveal">
+<pre><code>{
+  <span class="key">"backend_apis"</span>:   [<span class="s">"Node.js"</span>, <span class="s">"Python"</span>, <span class="s">"JavaScript"</span>, <span class="s">"REST APIs"</span>, <span class="s">"React"</span>, <span class="s">"PostgreSQL"</span>, <span class="s">"SQL"</span>],
+  <span class="key">"automation_ai"</span>:  [<span class="s">"n8n"</span>, <span class="s">"Zapier"</span>, <span class="s">"Make.com"</span>, <span class="s">"Webhooks"</span>, <span class="s">"ChatGPT"</span>, <span class="s">"Claude"</span>, <span class="s">"Cursor"</span>],
+  <span class="key">"crm"</span>:            [<span class="s">"GoHighLevel (expert)"</span>, <span class="s">"HubSpot"</span>, <span class="s">"Pipeline management"</span>, <span class="s">"CRM setup"</span>],
+  <span class="key">"project_mgmt"</span>:   [<span class="s">"ClickUp"</span>, <span class="s">"Workflow design"</span>, <span class="s">"Milestone tracking"</span>, <span class="s">"Resource planning"</span>, <span class="s">"SOPs"</span>],
+  <span class="key">"analytics"</span>:      [<span class="s">"KPI dashboards"</span>, <span class="s">"Operational reporting"</span>, <span class="s">"Performance tracking"</span>],
+  <span class="key">"marketing"</span>:      [<span class="s">"Meta Ads Manager"</span>, <span class="s">"Google Ads"</span>, <span class="s">"Google Workspace"</span>, <span class="s">"Fathom"</span>]
+}</code></pre>
+      </div>
+      <div class="skills">
+        <div class="skill-group reveal"><h3>// backend &amp; apis</h3><div class="chips"><span>node.js</span><span>python</span><span>javascript</span><span>rest</span><span>react</span><span>postgresql</span><span>sql</span></div></div>
+        <div class="skill-group reveal"><h3>// automation &amp; ai</h3><div class="chips"><span>n8n</span><span>zapier</span><span>make.com</span><span>webhooks</span><span>chatgpt</span><span>claude</span><span>cursor</span></div></div>
+        <div class="skill-group reveal"><h3>// crm</h3><div class="chips"><span class="hl">gohighlevel · expert</span><span>hubspot</span><span>pipelines</span></div></div>
+        <div class="skill-group reveal"><h3>// project mgmt</h3><div class="chips"><span>clickup</span><span>workflow-design</span><span>milestones</span><span>sops</span></div></div>
+        <div class="skill-group reveal"><h3>// analytics</h3><div class="chips"><span>kpi-dashboards</span><span>reporting</span><span>tracking</span></div></div>
+        <div class="skill-group reveal"><h3>// marketing</h3><div class="chips"><span>meta-ads</span><span>google-ads</span><span>workspace</span><span>fathom</span></div></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="wrap section">
+      <div class="section-head reveal">
+        <p class="cmd"><span class="ps">$</span> cat education.log</p>
+        <h2><span class="num">05.</span> Education &amp; certs</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu reveal">
+          <span class="date">EXPECTED 2026</span>
+          <h3>B.E. Computer &amp; Communications Engineering</h3>
+          <p>Notre Dame University — Louaize, North Lebanon</p>
+        </div>
+        <div class="edu reveal">
+          <span class="date">HIGH SCHOOL</span>
+          <h3>Lebanese Baccalaureate, General Sciences</h3>
+          <p>Sainte Famille Maronite, Miziara</p>
+        </div>
+        <div class="edu reveal">
+          <span class="date">CERTIFICATIONS</span>
+          <ul class="certs">
+            <li><span class="ok">[✔]</span> Google Certificate in Web Development</li>
+            <li><span class="ok">[✔]</span> UI/UX Design Certificate — Entrepreneurship Centre, NDU</li>
+            <li><span class="wip">[…]</span> CISSP <em>— in progress</em></li>
+          </ul>
+        </div>
+        <div class="edu reveal">
+          <span class="date">LANGUAGES</span>
+          <ul class="langs">
+            <li><span>arabic</span><span class="bar"><i style="width:100%"></i></span><em>native</em></li>
+            <li><span>english</span><span class="bar"><i style="width:92%"></i></span><em>fluent</em></li>
+            <li><span>french</span><span class="bar"><i style="width:78%"></i></span><em>professional</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="wrap section">
+      <div class="contact reveal">
+        <p class="cmd"><span class="ps">$</span> ./contact.sh --open-to-work</p>
+        <h2>Let's build something that runs itself.</h2>
+        <p>Open to full stack, automation and AI engineering roles — remote or in Lebanon.</p>
+        <div class="cta">
+          <a href="mailto:wasstawk@gmail.com" class="btn">wasstawk@gmail.com</a>
+          <button class="btn btn-ghost" id="copy-email" type="button">[ copy_email ]</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <span>© <span id="year">2026</span> Wassim Tawk <span class="muted">// built with html, css &amp; js</span></span>
+    <a href="#top">cd ~ ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
